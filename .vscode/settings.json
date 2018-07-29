@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "millis.h": "c",
+        "drec.h": "c"
+    }
+}
