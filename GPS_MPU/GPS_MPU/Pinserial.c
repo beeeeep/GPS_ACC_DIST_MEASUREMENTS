@@ -73,9 +73,8 @@ uint8_t Pin_serial_read_byte(void)
 			;
 		int_flag = 0;
 		if ((PIN_MASTER & (1 << DATA_PIN_MASTER)))
-			;
 		{
-			++byte;
+			byte |=(1<< 0x01);
 		}
 		byte = (1 << byte);
 		PORT_MASTER |= (1 << ACK_SEND_PIN_MASTER);
